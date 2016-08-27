@@ -7,8 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class="wrapper">
+  <header> 
+      <div id="cover">
+      <h1>Steve E. Gordon</h1>
+      <h2>Web Developer</h2>
+      <nav>
+        <ul>
+          <li><%= link_to 'home', home_path %></li>
+          <li><%= link_to 'blog', posts_path %></li>
+          <li><%= link_to 'about me', about_me_path %></li>
+          <li><%= link_to 'projects', projects_path %></li>
+        </ul>
+      </nav>
+      </div>
+  </header>
 <%= yield %>
-
+</div>
 </body>
 </html>

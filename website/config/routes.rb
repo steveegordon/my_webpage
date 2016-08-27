@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'pages/home'
+  get 'pages/home', :path => "home", :as => "home"
+  get 'pages/projects', :path => "projects", :as => "projects"
+  get 'pages/about_me', :path => "about_me", :as => "about_me"
 
   resources :posts
 
