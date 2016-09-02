@@ -11,6 +11,20 @@
 // about supported directives.
 //
 //= require jquery
+//= require tether
+//= require bootstrap
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.countTo
+//= require jquery.easing.1.3
+//= require jquery.magnific-popup.min
+//= require jquery.stellar.min
+//= require jquery.style.switcher
+//= require jquery.waypoints.min
+//= require main
+//= require modernizr-2.6.2.min
+//= require owl.carousel.min
+//= require respond.min
+//= require wow.min
 //= require_tree .
+

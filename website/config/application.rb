@@ -8,6 +8,11 @@ Bundler.require(*Rails.groups)
 
 module Website
   class Application < Rails::Application
+
+    config.assets.paths << Rails.root.join("app", "assets", "stylesheets", "base")
+    config.assets.paths << Rails.root.join("app", "assets", "javascripts", "base")
+    config.assets.paths << Rails.root.join("app", "assets", "images", "base")
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

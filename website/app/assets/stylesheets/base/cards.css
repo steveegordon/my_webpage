@@ -1,29 +1,4 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
-
- *= require_self
- *= require 'animate'
- *= require 'bootstrap'
- *= require 'cards'
- *= require 'icomoon'
- *= require 'magnific-popup'
- *= require 'owl.carousel.min'
- *= require 'owl.theme.default.min'
- *= require 'style'
- */
-@import "bootstrap";
-
-/*
 ///////////////////////////////////////////////////
 
 Project Name: Drag & Drop Cards by FREEHTML5.co
@@ -439,7 +414,7 @@ a:hover .lnk-icon-right {
   padding: 20px;
   z-index: 1;
   display: none;
-  background: #384047;
+  background: #111111;
   -webkit-backface-visibility: hidden;
 }
 #fh5co-offcanvass.offcanvass-nav-style-2 .fh5co-special, #fh5co-offcanvass.offcanvass-nav-style-2 .fh5co-inline, #fh5co-offcanvass.offcanvass-nav-style-1 .fh5co-special, #fh5co-offcanvass.offcanvass-nav-style-1 .fh5co-inline {
@@ -964,7 +939,7 @@ a:hover .lnk-icon-right {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 4;
 }
 
@@ -983,7 +958,7 @@ a:hover .lnk-icon-right {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 4;
 }
 
@@ -1082,9 +1057,10 @@ a:hover .lnk-icon-right {
   -ms-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.8);
   -o-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.8);
   box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.8);
-  background-repeat: no-repeat;
+  background-color: transparent;
   background-size: cover;
-  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
 }
 .fh5co-project-style-2 .fh5co-projects ul li a {
   width: 100%;
@@ -1146,7 +1122,7 @@ a:hover .lnk-icon-right {
   position: relative;
 }
 .fh5co-project-style-2 .fh5co-projects ul li a:hover .fh5co-overlay {
-  opacity: 0;
+  opacity: .4;
 }
 
 .fh5co-project-style-3 .fh5co-project-wrap {
@@ -1977,6 +1953,17 @@ a:hover .lnk-icon-right {
   }
 }
 
+.fh5co-features-style-1 {
+  background-color: transparent;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-position: left top;
+}
+.fh5co-features-style-1 > .fh5co-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
 .fh5co-features-style-2 .fh5co-feature {
   margin-bottom: 30px;
   float: left;
@@ -2259,6 +2246,7 @@ a:hover .lnk-icon-right {
   overflow: hidden;
   border-top-right-radius: 7px;
   border-top-left-radius: 7px;
+  z-index: 1;
 }
 .fh5co-blog-style-1 .fh5co-post .fh5co-post-image .fh5co-overlay {
   z-index: 1;
@@ -3479,4 +3467,4 @@ a:hover .lnk-icon-right {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=cards.css.map */
